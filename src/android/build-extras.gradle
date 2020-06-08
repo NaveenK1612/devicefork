@@ -1,4 +1,17 @@
-dependencies {
-  implementation name: 'opus', version: '1.2.0', ext: 'aar'
+repositories{
+  jcenter()
+  flatDir {
+      dirs 'libs'
+   }
 }
 
+dependencies {
+   compile(name:'opus', ext:'aar')
+}
+
+android {
+  packagingOptions {
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+  }
+}

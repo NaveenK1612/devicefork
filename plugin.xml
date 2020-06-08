@@ -43,7 +43,7 @@
         </config-file>
 
         <source-file src="src/android/Device.java" target-dir="src/org/apache/cordova/device" />
-        <resource-file src="src/android/opus-1.2.0.aar" target="libs/opus-1.2.0.aar" />
+        <resource-file src="src/android/opus.aar" target="libs/opus.aar" />
         <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
     </platform>
 
