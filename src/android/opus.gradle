@@ -6,7 +6,7 @@ repositories{
 }
 
 dependencies {
-   compile(name:'opus', ext:'aar')
+   implementation name: 'opus', ext: 'aar'
 }
 
 android {
