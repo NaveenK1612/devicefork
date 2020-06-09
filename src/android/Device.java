@@ -27,6 +27,7 @@ import org.apache.cordova.CordovaInterface;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import com.goziohealth.map.GZMMapViewNative;
 
 import android.provider.Settings;
 
@@ -124,7 +125,7 @@ public class Device extends CordovaPlugin {
     }
 
     public String getManufacturer() {
-        String manufacturer = android.os.Build.MANUFACTURER;
+        String manufacturer = Integer.toString(GZMMapViewNative.MAPMODE_NAV);
         return manufacturer;
     }
 
